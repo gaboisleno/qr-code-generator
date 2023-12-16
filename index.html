@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>QR Code Generator by Gabo</title>
+</head>
+<body>
+    
+    <div class="container-1" id="page_1">
+        <div class="logo">
+            <img src="./images/logo-qr-generator.svg" alt="">
+        </div>
+        
+        <div class="styled-input">
+            <input type="text" id="qrtext" placeholder="Enter an url">
+            <button name="submit" id="submit">QR code</button>
+        </div>
+    </div>
+    
+    <div class="container-2" id="page_2">
+        <div class="qrcontainer">
+            <div class="qrcode" id="qrcode"></div>
+        </div>
+
+        <div class="share-buttons">
+            <button class="btn-primary" id="download">Download <img src="./images/download-solid.svg" alt="download"></button>
+            <button class="btn-primary" id="share">Share <img src="./images/link-solid.svg" alt="share"></button>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
